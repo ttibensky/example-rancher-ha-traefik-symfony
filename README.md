@@ -1,6 +1,6 @@
-# Example rancher 2.0 playground
+# Example rancher playground
 
-Example rancher 2.0 in high availability with traefik proxy and sample symfony apps deployed.
+Example rancher in high availability with traefik proxy and sample symfony apps deployed.
 
 ## Setup guide
 
@@ -81,3 +81,4 @@ rancher-compose --url http://127.0.0.1:8080/v1 --access-key 7C54CB113CBDAA4DFA1D
 - all hosts are having some issues with ipsec, healthcheck and scheduler stacks https://github.com/rancher/rancher/issues/7664
 - rancher-compose deploy dowsn't work `ERRO[0000] Failed to open project symfony-example-1: Can not create a stack, check API key [7C54CB113CBDAA4DFA1D] for [http://127.0.0.1:8080/v1]
                                        FATA[0000] Failed to read project: Can not create a stack, check API key [7C54CB113CBDAA4DFA1D] for [http://127.0.0.1:8080/v1]`
+- traefik not yet deployed
