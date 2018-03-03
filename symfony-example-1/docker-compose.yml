@@ -1,0 +1,17 @@
+version: '2'
+services:
+
+  php-fpm-nginx:
+    image: ttibensky/rancher-symfony-example-1
+    depends_on:
+      - mysql
+    ports:
+      - 80:80
+
+  mysql:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: symfony
+      MYSQL_USER: symfony
+      MYSQL_PASSWORD: symfony
+      MYSQL_DATABASE: symfony

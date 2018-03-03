@@ -1,0 +1,12 @@
+version: '2'
+services:
+
+  php:
+    volumes:
+      - .:/var/www/html
+
+  mysql:
+    volumes:
+      - ./var/mysql:/var/www/html
+    expose:
+      - 3306
